@@ -1,0 +1,313 @@
+html{
+    font-size: 16px;
+}
+body{
+height: 100%;
+width: 100%;
+    
+
+    background-color: rgb(22,37,57);
+}
+a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+a:hover 
+{
+     color:black; 
+     text-decoration:none; 
+     cursor:pointer;  
+}
+
+
+
+.menu{
+    height: 12.5%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-auto-rows: auto;
+    color: aliceblue;
+    position: sticky;
+    top:2px;
+    background-color: rgb(22,37,57);
+    z-index: 1;
+}
+
+.logo{
+
+margin-left: 3rem;        
+}
+.logo img {
+  height: 100%;
+max-width: 100%;    
+  display: block;
+
+}
+.navItems{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-auto-rows: auto;
+}
+.navItems span{
+    align-content: flex-end;
+    margin-left: 0;
+    margin-top: 35px;
+    font-size: 1.4rem;
+    font-family: 'Open Sans',sans-serif;
+}
+
+.jumbotron{
+
+
+}
+#slide1{
+ background-image: url("images/city.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: none;
+    position: relative;
+    animation: fadeIt 1s ease-in;
+}
+#slide2{
+ background-image: url("images/edit4.png");
+ display: none;
+ background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+     animation: fadeIt 1s ease-in;
+}
+#slide3{
+ background-image: url("images/edit5.png");
+ display: block;    
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center;
+ height: 100vh;
+ position: relative; 
+ animation: fadeIt 1s ease-in;
+}
+#slide4{
+ background-image: url("images/city3.jpg");    
+ display: none;
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center;
+ height: 100vh;
+ animation: fadeIt 1s ease-in;
+ position: relative;    
+}
+#slide5{
+ background-image: url("images/city1.jpg");    
+ display: none;
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center;
+ height: 100vh;
+ animation: fadeIt 1s ease-in;
+ position: relative;    
+}
+#slide6{
+ background-image: url("images/edit2.png");    
+ display: none;
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center;
+ height: 100vh;
+ animation: fadeIt 1s ease-in;
+ position: relative;    
+}
+
+.contentContainer{
+    height: 60%;
+    display: grid;
+}
+#largeText{
+    margin: auto;
+    color: black;
+    background-color: aliceblue;
+    opacity: .8;
+    border-radius: 5px;
+    padding: 1.25rem;
+    font-family: 'Open Sans',sans-serif;
+    margin-bottom: 2rem;
+}
+#smallText{
+    width: 80%;
+    margin: auto;
+    color:aliceblue;
+    font-size: 1.35rem;
+    padding: 1.75rem;
+    font-family: 'Open Sans',sans-serif;
+}
+#PropertyTitle{
+    font-size: 2rem;
+    margin: auto;
+    margin-bottom: 1.25rem;
+    color: black;
+    padding: 1.55rem;
+    font-family: 'Open Sans',sans-serif;
+     background-color: rgba(255,255,255,0.8);
+    border-radius: 5px;
+}
+.imageGrid{
+    margin: auto;
+    grid-gap: .75rem;
+    grid-row-gap: 5.75rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: auto;
+    grid-template-areas: 'im1 im2 im3 im4'
+                         'im5 im6 im7 im8'
+}
+#img1{
+    background-image: url(images/estate2.jpg);
+    background-size: cover;
+    height: 18rem;
+    width: 18rem;
+    border-radius: 5px;
+    padding: 2rem;
+    grid-area: 'im1'
+    
+}
+#img2{
+    background-image: url(images/Isinya.jpg);
+    background-size: cover;
+    height: 18rem;
+    width: 18rem;
+    border-radius: 5px;
+    padding: 2rem;
+       grid-area: 'im2'
+    
+}
+#img3{
+    background-image: url(images/Roper20Properties20Property20Houses20Apartments20Villas20For20Sale20Lanzarote20Playa20Blanca202050-3.jpg);
+    background-size: cover;
+    height: 18rem;
+    width: 18rem;
+    border-radius: 5px;
+    padding: 2rem;
+       grid-area: 'im3'
+}
+#img4{
+    background-image: url(images/villejpg.jpg);
+    background-size: cover;
+    height: 18rem;
+    width: 18rem;
+    border-radius: 5px;
+    padding: 2rem;
+       grid-area: 'im4'
+}
+#img5{
+    background-image: url(images/estate1.jpg);
+    background-size: cover;
+    height: 18rem;
+    width: 18rem;
+    border-radius: 5px;
+    padding: 2rem;
+       grid-area: 'im5'
+}
+#img6{
+    background-image: url(images/place.jpg);
+    background-size: cover;
+    height: 18rem;
+    width: 18rem;
+    border-radius: 5px;
+    padding: 2rem;
+       grid-area: 'im6'
+}
+#img7{
+    background-image: url(images/6.jpg);
+    background-size: cover;
+    height: 18rem;
+    width: 18rem;
+    border-radius: 5px;
+    padding: 2rem;
+       grid-area: 'im7'
+}
+#img8{
+    background-image: url(images/3.jpg);
+    background-size: cover;
+    height: 18rem;
+    width: 18rem;
+    border-radius: 5px;
+    padding: 2rem;
+       grid-area: 'im8'
+}
+.contactsec{
+    display: grid;
+    grid-template-areas: 'title title title title'
+                         'location location location location'
+                         'call call call call'
+                         'email email email email';
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    color: aliceblue;
+    margin-top: 2rem;
+    
+    bottom: 30px;
+    width: 100%;
+}
+#contactTitle{
+    grid-area: 'title';
+    text-align: center;
+    margin: auto;
+    width: 100vw;
+     font-family: 'Open Sans',sans-serif;
+     background-color: rgba(255,255,255,0.8);
+    border-radius: 5px;
+    color: black;
+}
+.location{
+    grid-area: 'location';
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 10% 70%;
+    grid-auto-rows: auto;
+    padding: .55rem;
+    margin-left: 10rem;
+    
+    
+}
+.call{
+    grid-area: 'call';
+    grid-column: 1/-1;
+    display: grid;
+      grid-template-columns: 10% 70%;
+    grid-auto-rows: auto;
+    padding: .55rem;
+    margin-left: 10rem;
+    
+}
+.email{
+    grid-area: 'email';
+    grid-column: 1/-1;
+    display: grid;
+      grid-template-columns: 10% 70%;
+    grid-auto-rows: auto;
+    padding: .55rem;
+    margin-left: 10rem;
+}
+.footer{
+    width: 100%;
+    width: 100%;
+    color: black;
+    margin-bottom: 0;
+    background-color: rgb(255,255,255,0.7);
+    text-align: center;
+}
+/*slideshow animation*/
+@keyframes fadeIt {
+    0% {
+        opacity: .25;
+    }
+    
+    100%{
+        opacity: 1;
+    }
+}
