@@ -18,28 +18,33 @@ Cross Border Properties and Homes Ltd
 <nav class = 'menu'><div class = 'logo'><img src="images/logo.jpg" width="200px" height="100px" ></div><div class="navItems"><span id="home"><a href="index.html">Home</a></span><span id="about"><a href="About.html">About</a></span><span id="contact"><a href="contactUs.html">Contact Us</a></span></div></nav>
      
     <p class="title">Riverside Brooks Apartments, 84th Riverside Drive</p>
-    <div class="property-slider "></div>
+    <div class="property-slider "> 
+        <img  id="backbtn" src="images/back.png"/>
+        <img onclick="nextImg()" id="nextbtn" src="images/next.png"/>
+    
+    </div>
     <div class="pic-grid container-outer">
         <div class="container-inner">
-    <img src="images/building2.jpg" />
-    <img src="images/balcony.jpg" />
-    <img src="images/corridor.jpg" />
-    <img src="images/DSC_0065.jpg" />
-    <img src="images/DSC_0064.jpg" />
-    <img src="images/DSC_0067.jpg" />
-    <img src="images/DSC_0060.jpg" />
-    <img src="images/DSC_0056.jpg" />
-    <img src="images/DSC_0072.jpg" />
-    <img src="images/DSC_0186.jpg" />
-    <img src="images/DSC_0133.jpg" />
-    <img src="images/DSC_0166.jpg" />
-    <img src="images/DSC_0172.jpg" />
+    <img class="grid-images" src="images/building2.jpg" />
+    <img class="grid-images" src="images/balcony.jpg" />
+    <img class="grid-images" src="images/corridor.jpg" />
+    <img class="grid-images" src="images/DSC_0065.jpg" />
+    <img class="grid-images" src="images/DSC_0064.jpg" />
+    <img class="grid-images" src="images/DSC_0067.jpg" />
+    <img class="grid-images" src="images/DSC_0060.jpg" />
+    <img class="grid-images" src="images/DSC_0056.jpg" />
+    <img class="grid-images" src="images/DSC_0072.jpg" />
+    <img class="grid-images" src="images/DSC_0186.jpg" />
+    <img class="grid-images" src="images/DSC_0133.jpg" />
+    <img class="grid-images" src="images/DSC_0166.jpg" />
+    <img class="grid-images" src="images/DSC_0182.jpg" />
+    <img class="grid-images" src="images/DSC_0180.jpg" />
     
         </div>
     </div>
     <div class="property-description">
-    <h2 id="title-desc" style="padding: 20px;">Riverside Brooks Apartments, 84th Riverside Drive</h2>
-        <h2 style="margin-top: 10px; padding: 20px;">Facilities</h2>
+    <h2 id="title-desc" style="padding: 10px;">Riverside Brooks Apartments, 84th Riverside Drive</h2>
+        <h2 style="margin-top: -20px; padding: 20px;">Facilities</h2>
         <ul>
         <li>Spacious living space with good finishing</li>
         <li>3 bedroom apartment all ensuite</li>
@@ -63,7 +68,27 @@ Cross Border Properties and Homes Ltd
     <div class="email"><span class="fas fa-envelope"></span><p id="emailText">email: info@cbhpl.com</p></div>
     </section>
       <footer class="footer"><p id="footerText">&copy;Cross Border Properties and Homes 2018</p></footer>  
- 
+ <script>
+    
+    let imageContainer = document.getElementsByClassName('property-slider');
+     
+     let images = document.getElementsByClassName('grid-images');
+     
+     const nextImg = () =>{
+      let index = 0;
+        
+             
+         index + 1;
+         
+             console.log(index)
+               
+       console.log("you clicked me just check you js")
+           
+     } 
+     
+     
+     
+    </script>
      <script src="index.js"></script>
 </body>    
 </html>

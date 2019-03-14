@@ -86,9 +86,30 @@ width: 100vw;
   background-position: center;
 }
 
+#backbtn{
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: 90%;
+    left: 40%;
+    cursor: pointer;
+}
+
+#nextbtn{
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: 90%;
+    left: 50%;
+    cursor: pointer;
+
+}
+
 .pic-grid img{
 height: 180px;
 width: 180px;
+    margin: 5px;
+    cursor: pointer;
 }
 
 
@@ -96,7 +117,7 @@ width: 180px;
 margin-top: 200px;
     width: 100%;
     text-align: left;
-    height: 390px;
+    height: 450px;
     color: black;
     background: rgba(255,255,255,0.8);
 }
