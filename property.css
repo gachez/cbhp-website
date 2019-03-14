@@ -82,23 +82,20 @@ width: 100vw;
 #img1{
     background-image: url('images/building.jpg');
     height: 600px;
-    background-size: cover;
-  background-position: center;
+ background-size: 100% 100%;
 }
 
 #img2{
-    background-image: url('images/DSC_0056.jpg');
+    background-image: url('images/DSC_0057.jpg');
     height: 600px;
-    background-size: cover;
-  background-position: center;
+    background-size: 100% 100%;
     display: none;
 }
 
 #img3{
-    background-image: url('images/DSC_0059.jpg');
+    background-image: url('images/DSC_0094.png');
     height: 600px;
-    background-size: cover;
-  background-position: center;
+    background-size: 100% 100%;
      display: none;
 }
 
@@ -106,7 +103,7 @@ width: 100vw;
     background-image: url('images/DSC_0065.jpg');
     height: 600px;
     background-size: cover;
-  background-position: center;
+  background-position: bottom;
      display: none;
 }
 
