@@ -79,11 +79,44 @@ width: 100vw;
     margin-left: 25px;
 
 }
-.property-slider{
+#img1{
     background-image: url('images/building.jpg');
     height: 600px;
     background-size: cover;
   background-position: center;
+}
+
+#img2{
+    background-image: url('images/DSC_0056.jpg');
+    height: 600px;
+    background-size: cover;
+  background-position: center;
+    display: none;
+}
+
+#img3{
+    background-image: url('images/DSC_0059.jpg');
+    height: 600px;
+    background-size: cover;
+  background-position: center;
+     display: none;
+}
+
+#img4{
+    background-image: url('images/DSC_0065.jpg');
+    height: 600px;
+    background-size: cover;
+  background-position: center;
+     display: none;
+}
+
+#img5{
+    background-image: url('images/DSC_0087.jpg');
+    height: 600px;
+    background-size: cover;
+  background-position: center;
+ display: none;
+ 
 }
 
 #backbtn{

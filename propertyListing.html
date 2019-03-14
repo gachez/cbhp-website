@@ -18,9 +18,29 @@ Cross Border Properties and Homes Ltd
 <nav class = 'menu'><div class = 'logo'><img src="images/logo.jpg" width="200px" height="100px" ></div><div class="navItems"><span id="home"><a href="index.html">Home</a></span><span id="about"><a href="About.html">About</a></span><span id="contact"><a href="contactUs.html">Contact Us</a></span></div></nav>
      
     <p class="title">Riverside Brooks Apartments, 84th Riverside Drive</p>
-    <div class="property-slider "> 
-        <img  id="backbtn" src="images/back.png"/>
-        <img onclick="nextImg()" id="nextbtn" src="images/next.png"/>
+    <div id="img1" class="property-slider "> 
+        <img  onclick="plusDivs(-1)" id="backbtn" src="images/back.png"/>
+        <img onclick="plusDivs(1)" id="nextbtn" src="images/next.png"/>
+    
+    </div>
+    <div id="img2" class="property-slider "> 
+        <img  onclick="plusDivs(-1)" id="backbtn" src="images/back.png"/>
+        <img onclick="plusDivs(1)" id="nextbtn" src="images/next.png"/>
+    
+    </div>
+    <div id="img3" class="property-slider "> 
+        <img  onclick="plusDivs(-1)" id="backbtn" src="images/back.png"/>
+        <img onclick="plusDivs(1)" id="nextbtn" src="images/next.png"/>
+    
+    </div>
+    <div id="img4" class="property-slider "> 
+        <img  onclick="plusDivs(-1)" id="backbtn" src="images/back.png"/>
+        <img  onclick="plusDivs(1)"id="nextbtn" src="images/next.png"/>
+    
+    </div>
+    <div id="img5" class="property-slider "> 
+        <img  onclick="plusDivs(-1)" id="backbtn" src="images/back.png"/>
+        <img onclick="plusDivs(1)" id="nextbtn" src="images/next.png"/>
     
     </div>
     <div class="pic-grid container-outer">
@@ -70,21 +90,23 @@ Cross Border Properties and Homes Ltd
       <footer class="footer"><p id="footerText">&copy;Cross Border Properties and Homes 2018</p></footer>  
  <script>
     
-    let imageContainer = document.getElementsByClassName('property-slider');
-     
-     let images = document.getElementsByClassName('grid-images');
-     
-     const nextImg = () =>{
-      let index = 0;
-        
-             
-         index + 1;
-         
-             console.log(index)
-               
-       console.log("you clicked me just check you js")
-           
-     } 
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("property-slider");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
      
      
      
